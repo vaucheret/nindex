@@ -1,0 +1,7 @@
+6    Swiper: dets_
+     DB = dets_nindex,
+     dets:close(dets_nindex).
+     Links = dets:match_object(dets_nindex,'_'),
+     Link = case dets:lookup(dets_nindex, ID) of
+     ok = dets:insert(dets_nindex,Link),
+     ok = dets:delete(dets_nindex, ID),
